@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drone International</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0b1e2d;
+      color: #ffffff;
+    }
+
+    .hero {
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      text-align: center;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    button {
+      background-color: #1f6feb;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #174ea6;
+    }
+
+    footer {
+      background-color: #071521;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+ /* For mobile and tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero {
+    height: 30vh; /* Set height to 30vh for mobile/tablet screens */
+  }
+ section {
+      padding: 30px 20px;
+	}
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <div>
+      <h1>Drone International</h1>
+      <p>
+        Reliable PNS Grade Steel Scrap Supply from Singapore to Bangladesh.<br>
+        Serving leading re-rolling mills across Bangladesh.
+      </p>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      Drone International is a Singapore-based steel scrap trading company
+      supplying PNS grade scrap to major re-rolling mills in Bangladesh.
+      We ensure reliable sourcing, LC-based transactions, and shipment
+      within 3 weeks after LC confirmation.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact Us</h2>
+
+    <form action="https://formspree.io/f/mdanyaje" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="designation" placeholder="Your Designation" required>
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <textarea name="message" placeholder="Your Inquiry" required></textarea>
+
+      <!-- Optional settings -->
+      <input type="hidden" name="_subject" value="New Inquiry-Drone International">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Drone International | Singapore Based Steel Scrap Supplier
+  </footer>
+
+</body>
+</html>
